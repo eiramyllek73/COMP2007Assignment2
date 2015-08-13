@@ -1,0 +1,109 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="FrontEnd.master.cs" Inherits="COMP2007Assignment2.FrontEnd" %>
+
+<!DOCTYPE html>
+<!-- AUTHOR:  Kelly McAlpine -->
+<!-- PROJECT NAME:  COMP2007 - Assignment 2 -->
+<!-- DATE:  August 2015 -->
+<html lang="en">
+
+<head runat="server">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="The description of my page" />
+    <title></title>
+
+    <!-- CSS SECTION -->
+    <link href="Content/bootstrap.min.css" rel="stylesheet" />
+    <link href="Content/bootstrap-theme.min.css" rel="stylesheet" />
+    <link href="Content/Main.css" rel="stylesheet" />
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+
+</head>
+<body>
+    <div class="container-fluid">
+        <form id="form1" runat="server">
+            <div>
+                <asp:PlaceHolder ID="PublicNav" runat="server">
+                    <nav class="navbar navbar-inverse" role="navigation">
+                        <div class="container-fluid">
+                            <!-- Brand and toggle get grouped for better mobile display -->
+                            <div class="navbar-header">
+                                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                                    <span class="sr-only">Toggle navigation</span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                </button>
+                                <a class="navbar-brand" href="#">StudentGenius!</a>
+                            </div>
+                            <!-- Collect the nav links, forms, and other content for toggling -->
+                            <div class="collapse navbar-collapse" id="bs-public-navbar-collapse-1">
+                                <ul class="nav navbar-nav">
+                                    <li><a href="/">HOME</a></li>
+                                    <li><a href="/About.aspx">ABOUT</a></li>
+                                    <li><a href="/Contact.aspx">CONTACT</a></li>
+                                </ul>
+
+                                <ul class="nav navbar-nav navbar-right">
+                                    <li><a href="/Register.aspx">Register</a></li>
+                                    <li><a href="/Login.aspx">Login</a></li>
+                                </ul>
+                            </div>
+                            <!-- /.navbar-collapse -->
+                        </div>
+                        <!-- /.container-fluid -->
+                    </nav>
+                </asp:PlaceHolder>
+                <!-- End PublicNav -->
+
+                <asp:PlaceHolder ID="PrivateNav" runat="server">
+                    <nav class="navbar navbar-inverse" role="navigation">
+                        <div class="container-fluid">
+                            <!-- Brand and toggle get grouped for better mobile display -->
+                            <div class="navbar-header">
+                                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                                    <span class="sr-only">Toggle navigation</span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                </button>
+                                <a class="navbar-brand" href="#">StudentGenius!</a>
+                            </div>
+                            <!-- Collect the nav links, forms, and other content for toggling -->
+                            <div class="collapse navbar-collapse" id="bs-private-navbar-collapse-2">
+                                <ul class="nav navbar-nav">
+                                    <li><a href="/">HOME</a></li>
+                                    <li><a href="/StudentGenius.aspx">StudentGenius</a></li>
+                                    <li><a href="/About.aspx">ABOUT</a></li>
+                                    <li><a href="/Contact.aspx">CONTACT</a></li>
+                                </ul>
+
+                                <ul class="nav navbar-nav navbar-right">
+                                    <li><a href="/Logout.aspx">Logout</a></li>
+                                </ul>
+                            </div>
+                            <!-- /.navbar-collapse -->
+                        </div>
+                        <!-- /.container-fluid -->
+                    </nav>
+                </asp:PlaceHolder>
+                <!-- End PrivateNav -->
+
+                <asp:ContentPlaceHolder ID="MainContent" runat="server">
+                </asp:ContentPlaceHolder>
+            </div>
+        </form>
+    </div>
+    <!-- End container-fluid -->
+
+    <!--JAVASCRIPT SECTION -->
+    <script src="scripts/jquery-2.1.4.min.js"></script>
+    <script src="scripts/bootstrap.min.js"></script>
+
+</body>
+</html>
+
+
