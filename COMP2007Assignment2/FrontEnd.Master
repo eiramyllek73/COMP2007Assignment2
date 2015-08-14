@@ -78,7 +78,7 @@
                             <div class="collapse navbar-collapse" id="bs-private-navbar-collapse-2">
                                 <ul class="nav navbar-nav">
                                     <li class="text-center"><a href="/"><i class="fa fa-home fa-2x"></i> <span>Home</span></a></li>
-                                    <li class="text-center"><a href="/StudentGenius.aspx"><i class="fa fa-graduation-cap fa-2x"></i> <span>StudentGenius!</span></a></li>
+                                    <li class="text-center"><a href="/Planners/Default.aspx"><i class="fa fa-graduation-cap fa-2x"></i> <span>StudentGenius!</span></a></li>
                                     <li class="text-center"><a href="/About.aspx"><i class="fa fa-info fa-2x"></i> <span>ABOUT</span></a></li>
                                     <li class="text-center"><a href="/Contact.aspx"><i class="fa fa-phone fa-2x"></i> <span>Contact</span></a></li>
                                 </ul>
