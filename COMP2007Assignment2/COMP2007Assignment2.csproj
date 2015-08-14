@@ -160,7 +160,6 @@
     <Content Include="Models\SGModel.edmx.diagram">
       <DependentUpon>SGModel.edmx</DependentUpon>
     </Content>
-    <None Include="Properties\PublishProfiles\studentgenius %282%29.pubxml" />
     <None Include="Properties\PublishProfiles\studentgenius.pubxml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
