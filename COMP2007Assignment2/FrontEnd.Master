@@ -16,6 +16,7 @@
     <!-- CSS SECTION -->
     <link href="Content/bootstrap.min.css" rel="stylesheet" />
     <link href="Content/bootstrap-theme.min.css" rel="stylesheet" />
+    <link href="Content/font-awesome.min.css" rel="stylesheet" />
     <link href="Content/Main.css" rel="stylesheet" />
 
     <asp:ContentPlaceHolder ID="head" runat="server">
@@ -23,6 +24,7 @@
 
 </head>
 <body>
+    <header role="banner"></header>
     <div class="container-fluid">
         <form id="form1" runat="server">
             <div>
@@ -42,14 +44,14 @@
                             <!-- Collect the nav links, forms, and other content for toggling -->
                             <div class="collapse navbar-collapse" id="bs-public-navbar-collapse-1">
                                 <ul class="nav navbar-nav">
-                                    <li><a href="/">HOME</a></li>
-                                    <li><a href="/About.aspx">ABOUT</a></li>
-                                    <li><a href="/Contact.aspx">CONTACT</a></li>
+                                    <li class="text-center"><a href="/"><i class="fa fa-home fa-2x"></i> <span>Home</span></a></li>
+                                    <li class="text-center"><a href="/About.aspx"><i class="fa fa-info fa-2x"></i> <span>ABOUT</span></a></li>
+                                    <li class="text-center"><a href="/Contact.aspx"><i class="fa fa-phone fa-2x"></i> <span>Contact</span></a></li>
                                 </ul>
 
                                 <ul class="nav navbar-nav navbar-right">
-                                    <li><a href="/Register.aspx">Register</a></li>
-                                    <li><a href="/Login.aspx">Login</a></li>
+                                    <li class="text-center"><a href="/Register.aspx"><i class="fa fa-plus fa-2x"></i> <span>Register</span></a></li>
+                                    <li class="text-center"><a href="/Login.aspx"><i class="fa fa-sign-in fa-2x"></i> <span>Login</span></a></li>
                                 </ul>
                             </div>
                             <!-- /.navbar-collapse -->
@@ -75,15 +77,15 @@
                             <!-- Collect the nav links, forms, and other content for toggling -->
                             <div class="collapse navbar-collapse" id="bs-private-navbar-collapse-2">
                                 <ul class="nav navbar-nav">
-                                    <li><a href="/">HOME</a></li>
-                                    <li><a href="/StudentGenius.aspx">StudentGenius</a></li>
-                                    <li><a href="/About.aspx">ABOUT</a></li>
-                                    <li><a href="/Contact.aspx">CONTACT</a></li>
+                                    <li class="text-center"><a href="/"><i class="fa fa-home fa-2x"></i> <span>Home</span></a></li>
+                                    <li class="text-center"><a href="/StudentGenius.aspx"><i class="fa fa-graduation-cap fa-2x"></i> <span>StudentGenius!</span></a></li>
+                                    <li class="text-center"><a href="/About.aspx"><i class="fa fa-info fa-2x"></i> <span>ABOUT</span></a></li>
+                                    <li class="text-center"><a href="/Contact.aspx"><i class="fa fa-phone fa-2x"></i> <span>Contact</span></a></li>
                                 </ul>
 
                                 <ul class="nav navbar-nav navbar-right">
-                                    <li class="navbar-text">Good to see you <asp:LoginName ID="LoginName1" runat="server" />!</li>
-                                    <li><asp:LoginStatus ID="LoginStatus1" runat="server" /></li>
+                                    <li class="navbar-text text-center">Good to see you <asp:LoginName ID="LoginName1" runat="server" />!</li>
+                                    <li class="text-center"><asp:LoginStatus ID="LoginStatus1" runat="server" /></li>
                                     
                                 </ul>
                             </div>
@@ -100,6 +102,10 @@
         </form>
     </div>
     <!-- End container-fluid -->
+
+        <footer class="text-center" role="contentinfo">
+        <h4>&copy; Copyright 2015</h4>
+    </footer>
 
     <!--JAVASCRIPT SECTION -->
     <script src="scripts/jquery-2.1.4.min.js"></script>
